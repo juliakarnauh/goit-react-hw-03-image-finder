@@ -29,7 +29,6 @@ ImageGallery.propTypes = {
   onImageClick: PropTypes.func.isRequired,
 };
 
-
 // export const ImageGallery = ({ images, onImageClick }) => {
 //    return (
 //    <ImageGalleryList>
