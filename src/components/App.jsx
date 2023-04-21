@@ -73,7 +73,6 @@ export class App extends Component {
       modalAlt: e.target.alt,
       modalImg: e.target.name,
     });
-    window.addEventListener('keydown', this.handleKeyDown);
   };
 
   handleModalClose = () => {
@@ -82,14 +81,8 @@ export class App extends Component {
       modalImg: '',
       modalAlt: '',
     });
-    window.removeEventListener('keydown', this.handleKeyDown);
   };
 
-  handleKeyDown = event => {
-    if (event.code === 'Escape') {
-      this.handleModalClose();
-    }
-  };
 
   render() {
     const { totalHits, images, modalOpen, modalImg, modalAlt } = this.state;
